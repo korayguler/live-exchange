@@ -1,12 +1,12 @@
-#### Live Exchange
+### Live Exchange
 
-<hr>
 
 #### Tech Stack
 
 ```
 JavaScript
 FontAwesome
+API(exchangeratesapi.io)
 ```
 
 #### Preview
