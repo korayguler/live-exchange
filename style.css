@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500&display=swap');
+:root {
+  --c-w: #ebecf0;
+}
+body {
+  font-family: 'Saira Condensed', sans-serif;
+  user-select: none;
+}
+.title {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  color: #333;
+}
+.title span {
+  color: var(--c-w);
+  background-color: #333;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 32px;
+}
+.card {
+  min-width: 240px;
+  width: 80vw;
+  height: 240px;
+  background-color: var(--c-w);
+  border-radius: 47px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.card h1 {
+  font-size: 100px;
+  font-weight: 300;
+  color: #222;
+}
+.card p {
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  color: #444;
+}
+.card span {
+  position: absolute;
+  font-size: 32px;
+  top: -12px;
+  right: -12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  color: var(--c-w);
+  background-color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 32px;
+  }
+  .card {
+    width: auto;
+  }
+} ;
